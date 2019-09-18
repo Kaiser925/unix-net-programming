@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:unixnet.xcodeproj">
+      location = "self:/Users/zhangliangliang/Workspace/unixnet/unix-net-programming.xcodeproj">
    </FileRef>
 </Workspace>

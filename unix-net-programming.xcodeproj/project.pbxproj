@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		754D9D582331219800BB455B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 754D9D572331219800BB455B /* main.c */; };
+		754D9D582331219800BB455B /* daytimetcpcli.c in Sources */ = {isa = PBXBuildFile; fileRef = 754D9D572331219800BB455B /* daytimetcpcli.c */; };
+		754D9D642332771C00BB455B /* unp.c in Sources */ = {isa = PBXBuildFile; fileRef = 754D9D632332771C00BB455B /* unp.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		754D9D542331219800BB455B /* unixnet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unixnet; sourceTree = BUILT_PRODUCTS_DIR; };
-		754D9D572331219800BB455B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		754D9D542331219800BB455B /* unixnet */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = unixnet; sourceTree = BUILT_PRODUCTS_DIR; };
+		754D9D572331219800BB455B /* daytimetcpcli.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = daytimetcpcli.c; sourceTree = "<group>"; };
+		754D9D60233125F800BB455B /* unp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unp.h; sourceTree = "<group>"; };
+		754D9D622331285200BB455B /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		754D9D632332771C00BB455B /* unp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = unp.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +45,7 @@
 		754D9D4B2331219700BB455B = {
 			isa = PBXGroup;
 			children = (
-				754D9D562331219800BB455B /* unixnet */,
+				754D9D562331219800BB455B /* unix-net-programming */,
 				754D9D552331219800BB455B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +58,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		754D9D562331219800BB455B /* unixnet */ = {
+		754D9D562331219800BB455B /* unix-net-programming */ = {
 			isa = PBXGroup;
 			children = (
-				754D9D572331219800BB455B /* main.c */,
+				754D9D5F2331243800BB455B /* intro */,
+				754D9D622331285200BB455B /* config.h */,
 			);
-			path = unixnet;
+			path = "unix-net-programming";
+			sourceTree = "<group>";
+		};
+		754D9D5F2331243800BB455B /* intro */ = {
+			isa = PBXGroup;
+			children = (
+				754D9D60233125F800BB455B /* unp.h */,
+				754D9D572331219800BB455B /* daytimetcpcli.c */,
+				754D9D632332771C00BB455B /* unp.c */,
+			);
+			path = intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 754D9D4F2331219700BB455B /* Build configuration list for PBXProject "unixnet" */;
+			buildConfigurationList = 754D9D4F2331219700BB455B /* Build configuration list for PBXProject "unix-net-programming" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754D9D582331219800BB455B /* main.c in Sources */,
+				754D9D582331219800BB455B /* daytimetcpcli.c in Sources */,
+				754D9D642332771C00BB455B /* unp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +271,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		754D9D4F2331219700BB455B /* Build configuration list for PBXProject "unixnet" */ = {
+		754D9D4F2331219700BB455B /* Build configuration list for PBXProject "unix-net-programming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				754D9D592331219800BB455B /* Debug */,
